@@ -10,16 +10,3 @@ require('./config/database.js')(url);
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express Server escutando na porta ' + app.get('port'));
 });
-
-
-/* CÓDIGO DE ACORDO COM O MATERIAL
-var http = require('http'); ok
-var express = require('express'); este ok
-var app = express(); este ok
-require('./config/express')(app); este alterado
-require('./config/passport')(); este alterado
-require('./config/database')('mongodb://localhost/contatooh');
-http.createServer(app).listen(app.get('port'), function(){
-console.log('Express Server escutando na porta ' + app.get('port'));
-});
-*/
